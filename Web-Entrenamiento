@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mundo Entrenamiento · Gimnasio y deportes de combate</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f3ef;--surface:#fff;--text:#1b1b1f;--muted:#55555f;--accent:#d9480f;--line:#e3dfd8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e11;--surface:#18181d;--text:#f2f2f4;--muted:#a5a5b0;--accent:#ff7a3d;--line:#2b2b33}}
+:root[data-theme="dark"]{--bg:#0e0e11;--surface:#18181d;--text:#f2f2f4;--muted:#a5a5b0;--accent:#ff7a3d;--line:#2b2b33}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*{box-sizing:border-box;margin:0}
+body{font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:10}
+h1,h2,h3,.brand{font-family:Oswald,Impact,"Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.1}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--surface);border-bottom:1px solid var(--line)}
+nav{max-width:1100px;margin:auto;display:flex;align-items:center;gap:8px;padding:0 16px}
+.brand{font-size:20px;color:var(--accent);white-space:nowrap;padding:14px 8px 14px 0;text-decoration:none}
+nav ul{display:flex;list-style:none;padding:0;overflow-x:auto;gap:2px;margin-left:auto;min-width:0}
+nav li a{display:block;padding:15px 12px;color:var(--text);text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap}
+nav li a:hover{color:var(--accent)}
+.hero{padding:84px 16px 72px;text-align:center;color:#fff;background:linear-gradient(135deg,#14141a,#4a1d08)}
+.hero h1{font-size:clamp(42px,9vw,88px)}
+.hero h1 span{color:#ff7a3d}
+.hero p{max-width:640px;margin:18px auto 28px;color:#d6d6dd;font-size:18px}
+.btn{display:inline-block;margin:4px;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;background:#ff7a3d;color:#14141a}
+.btn.alt{background:transparent;color:#fff;border:2px solid #ffffff55}
+section{padding:60px 16px}
+.wrap{max-width:1100px;margin:auto}
+h2{font-size:clamp(28px,5vw,42px);margin-bottom:10px}
+h2::after{content:"";display:block;width:56px;height:4px;background:var(--accent);margin-top:10px;border-radius:2px}
+.lead{color:var(--muted);max-width:720px;margin:14px 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px;margin-top:6px}
+.card b{color:var(--text)}
+.tag{display:inline-block;font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.07em}
+.alt-bg{background:var(--surface);border-block:1px solid var(--line)}
+.alt-bg .card{background:var(--bg)}
+h3.country{font-size:24px;margin:30px 0 12px;color:var(--accent)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;min-width:600px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:15px;vertical-align:middle}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+.bar{height:8px;border-radius:4px;background:var(--line);min-width:120px}
+.bar i{display:block;height:100%;border-radius:4px;background:var(--accent)}
+.note{color:var(--muted);font-size:14px;margin-top:14px}
+footer{padding:32px 16px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a class="brand" href="#inicio">💪 Mundo Entrenamiento</a>
+<ul>
+<li><a href="#metodos">Métodos</a></li>
+<li><a href="#referentes">Referentes</a></li>
+<li><a href="#combate">Deportes de combate</a></li>
+<li><a href="#figuras">Figuras</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<div class="hero" id="inicio">
+<h1>Entrena. <span>Aprende.</span> Supérate.</h1>
+<p>Una guía sencilla sobre cómo se entrena hoy: los métodos más usados en el gimnasio, los referentes del mundo hispano y los deportes de combate que mueven al planeta.</p>
+<a class="btn" href="#metodos">Empezar</a><a class="btn alt" href="#combate">Ir a combate</a>
+</div>
+
+<section id="metodos">
+<div class="wrap">
+<h2>Métodos de entrenamiento más usados</h2>
+<p class="lead">Seis formas de entrenar muy extendidas hoy, qué implican y por qué la gente las elige.</p>
+<div class="grid">
+<div class="card"><span class="tag">Gimnasio</span><h3>Hipertrofia</h3><p><b>En qué consiste:</b> series de 6 a 15 repeticiones con pesas y máquinas, cerca del fallo, repartidas en rutinas como full body, torso-pierna o push/pull/legs.</p><p><b>Por qué lo eligen:</b> ganar músculo, mejorar el físico y notar el progreso sesión a sesión.</p></div>
+<div class="card"><span class="tag">Gimnasio</span><h3>Fuerza y powerlifting</h3><p><b>En qué consiste:</b> pocas repeticiones (1 a 5) con cargas altas en sentadilla, press banca y peso muerto, con progresión planificada, por ejemplo 5×5.</p><p><b>Por qué lo eligen:</b> ser más fuerte, tener metas medibles en kilos y construir una base para otros deportes.</p></div>
+<div class="card"><span class="tag">Cardio</span><h3>HIIT</h3><p><b>En qué consiste:</b> intervalos cortos de esfuerzo máximo alternados con pausas, en sesiones de 15 a 30 minutos.</p><p><b>Por qué lo eligen:</b> poco tiempo disponible, mejora de la resistencia y gasto calórico elevado.</p></div>
+<div class="card"><span class="tag">Peso corporal</span><h3>Calistenia</h3><p><b>En qué consiste:</b> dominadas, fondos, flexiones y planchas con progresiones hacia habilidades como el muscle-up.</p><p><b>Por qué lo eligen:</b> es casi gratis, se hace en un parque o en casa y da mucho control corporal.</p></div>
+<div class="card"><span class="tag">Funcional</span><h3>CrossFit</h3><p><b>En qué consiste:</b> entrenos del día (WOD) que mezclan halterofilia, gimnasia y cardio, normalmente en grupo y con supervisión.</p><p><b>Por qué lo eligen:</b> variedad, ambiente de comunidad y motivación para no faltar.</p></div>
+<div class="card"><span class="tag">Resistencia</span><h3>Running y cardio base</h3><p><b>En qué consiste:</b> sesiones largas a ritmo moderado (running, ciclismo, remo) que construyen la base aeróbica.</p><p><b>Por qué lo eligen:</b> salud cardiovascular, despejar la mente y retos como una media maratón.</p></div>
+</div>
+</div>
+</section>
+
+<section id="referentes" class="alt-bg">
+<div class="wrap">
+<h2>Referentes del mundo del gimnasio</h2>
+<p class="lead">Culturismo, fisicoculturismo y preparación física en España, Argentina, México, Colombia y Chile. Es una selección orientativa, no un ranking.</p>
+
+<h3 class="country">España</h3>
+<div class="grid">
+<div class="card"><span class="tag">Culturismo natural</span><h3>Roberto Amorosi</h3><p>Fundador de la Escuela de Culturismo Natural y una de las figuras más influyentes del culturismo natural en España.</p></div>
+<div class="card"><span class="tag">Divulgación</span><h3>Marcos Gómez</h3><p>Fundador de Culturadegym, conocido por desmontar mitos del fitness con un enfoque práctico.</p></div>
+<div class="card"><span class="tag">Competición</span><h3>Eneko Baz</h3><p>Competidor y preparador de culturismo, con títulos en la federación de culturismo natural WBNF. En redes es @bazman_science.</p></div>
+</div>
+
+<h3 class="country">Argentina</h3>
+<div class="grid">
+<div class="card"><span class="tag">IFBB Pro</span><h3>Federico Cendra</h3><p>Campeón argentino, del Mercosur y sudamericano de la IFBB Pro, y divulgador de poses, nutrición y suplementación para atletas.</p></div>
+<div class="card"><span class="tag">Wellness</span><h3>Karen Heredia</h3><p>Misionera con más de una década de trabajo constante, considerada una de las referentes del fisicoculturismo argentino y presente en el circuito IFBB Pro.</p></div>
+</div>
+
+<h3 class="country">México</h3>
+<div class="grid">
+<div class="card"><span class="tag">Pionero</span><h3>Pedro Barrón</h3><p>«The Pitbull». Primer mexicano en lograr el carnet profesional de la IFBB (2008) y Mister México Absoluto en 2003. Hoy es entrenador y entrena en Gold’s Gym Venice.</p></div>
+<div class="card"><span class="tag">Mr. Olympia</span><h3>Ismael Martínez</h3><p>Atleta de Men’s Physique con amplia experiencia en el Mr. Olympia, donde en 2026 disputa su quinta participación.</p></div>
+</div>
+
+<h3 class="country">Colombia</h3>
+<div class="grid">
+<div class="card"><span class="tag">Men’s Physique</span><h3>Rafael Kuang Li</h3><p>Fisicoculturista profesional de la IFBB, campeón Señor Colombia en 2014 y uno de los primeros Men’s Physique IFBB Pro del país.</p></div>
+</div>
+
+<h3 class="country">Chile</h3>
+<div class="grid">
+<div class="card"><span class="tag">Mr. Olympia</span><h3>Felipe Fierro</h3><p>Fisicoculturista de Temuco que ha competido en el Mr. Olympia y organiza su propio torneo clasificatorio, el Felipe Fierro Classic.</p></div>
+<div class="card"><span class="tag">Pionero</span><h3>Christian Lobarede (1968–2023)</h3><p>Nacido en Concepción. Campeón absoluto de Chile, ganó los Juegos Hispanoamericanos de la IFBB en 1998, obtuvo su carnet profesional y debutó como pro en 1999.</p></div>
+</div>
+</div>
+</section>
+
+<section id="combate">
+<div class="wrap">
+<h2>Deportes de combate más practicados</h2>
+<p class="lead">Ocho disciplinas con gran presencia mundial, su origen y una estimación de su peso global.</p>
+<div class="tw">
+<table>
+<thead><tr><th>Deporte</th><th>País de origen</th><th>Peso mundial (estimado)</th></tr></thead>
+<tbody>
+<tr><td><b>Karate</b></td><td>Japón (Okinawa)</td><td><div class="bar"><i style="width:95%"></i></div></td></tr>
+<tr><td><b>Boxeo</b></td><td>Raíces en la Antigüedad; forma moderna en Reino Unido</td><td><div class="bar"><i style="width:90%"></i></div></td></tr>
+<tr><td><b>Taekwondo</b></td><td>Corea del Sur</td><td><div class="bar"><i style="width:90%"></i></div></td></tr>
+<tr><td><b>Judo</b></td><td>Japón</td><td><div class="bar"><i style="width:80%"></i></div></td></tr>
+<tr><td><b>Lucha</b></td><td>Antigüedad (Grecia y otras culturas)</td><td><div class="bar"><i style="width:70%"></i></div></td></tr>
+<tr><td><b>MMA</b></td><td>Estados Unidos (UFC, 1993), con raíces en el pancracio y el vale tudo brasileño</td><td><div class="bar"><i style="width:70%"></i></div></td></tr>
+<tr><td><b>Muay Thai</b></td><td>Tailandia</td><td><div class="bar"><i style="width:55%"></i></div></td></tr>
+<tr><td><b>Jiu-jitsu brasileño</b></td><td>Brasil</td><td><div class="bar"><i style="width:50%"></i></div></td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Las barras son una comparación orientativa. No existen cifras oficiales exactas y los números de practicantes que dan federaciones y estudios varían mucho de una fuente a otra.</p>
+</div>
+</section>
+
+<section id="figuras" class="alt-bg">
+<div class="wrap">
+<h2>Una figura por cada deporte</h2>
+<p class="lead">Su historia en pocas líneas y cómo entrenan o entrenaban.</p>
+<div class="grid">
+<div class="card"><span class="tag">Boxeo</span><h3>Muhammad Ali</h3><p><b>Historia:</b> oro olímpico en 1960 y tres veces campeón mundial de los pesos pesados. Su velocidad y su personalidad cambiaron el boxeo.</p><p><b>Entrenamiento:</b> mucho trabajo de carrera, sparring, saco, sombra y cuerda, con enorme volumen de ejercicios de abdomen.</p></div>
+<div class="card"><span class="tag">Judo</span><h3>Teddy Riner</h3><p><b>Historia:</b> judoca francés, múltiple campeón olímpico y mundial en la categoría de más de 100 kg y uno de los más laureados de la historia.</p><p><b>Entrenamiento:</b> randori (combate de práctica), uchikomi (repetición de entradas) y preparación de fuerza y condición física.</p></div>
+<div class="card"><span class="tag">Karate</span><h3>Gichin Funakoshi</h3><p><b>Historia:</b> maestro de Okinawa (1868–1957) que llevó el karate a Japón en 1922 y fundó el estilo Shotokan.</p><p><b>Entrenamiento:</b> kihon (técnicas básicas), kata (formas) y kumite (combate), además de trabajo en el makiwara para endurecer golpes.</p></div>
+<div class="card"><span class="tag">Taekwondo</span><h3>Steven López</h3><p><b>Historia:</b> estadounidense de familia nicaragüense, campeón olímpico en Sídney 2000 y Atenas 2004, con bronce en Pekín 2008.</p><p><b>Entrenamiento:</b> patadas a mucha velocidad, sparring, flexibilidad y trabajo explosivo de piernas.</p></div>
+<div class="card"><span class="tag">Muay Thai</span><h3>Buakaw Banchamek</h3><p><b>Historia:</b> tailandés que dio fama mundial al muay thai al ganar el K-1 World MAX en 2004 y 2006.</p><p><b>Entrenamiento:</b> manoplas, trabajo de clinch, saco pesado, carrera, sparring y acondicionamiento de espinillas.</p></div>
+<div class="card"><span class="tag">Jiu-jitsu brasileño</span><h3>Royce Gracie</h3><p><b>Historia:</b> de la familia Gracie, ganó los primeros torneos de la UFC (1993 y 1994) y mostró al mundo la eficacia del jiu-jitsu.</p><p><b>Entrenamiento:</b> drilling de técnicas, rodaje (sparring en el suelo) y estudio de posiciones y palancas.</p></div>
+<div class="card"><span class="tag">MMA</span><h3>Khabib Nurmagomedov</h3><p><b>Historia:</b> ruso de Daguestán, campeón del peso ligero de la UFC (2018–2020) y retirado invicto con 29 victorias.</p><p><b>Entrenamiento:</b> base de lucha y sambo desde niño, grappling de alto volumen y preparación física exigente, con campamentos en las montañas.</p></div>
+<div class="card"><span class="tag">Lucha</span><h3>Aleksandr Karelin</h3><p><b>Historia:</b> luchador ruso de grecorromana, tres oros olímpicos (1988, 1992, 1996) y plata en 2000, casi imbatible durante años.</p><p><b>Entrenamiento:</b> fuerza extrema, cargas poco convencionales y mucha resistencia, con duras sesiones al aire libre en el clima siberiano.</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p>Contenido orientativo. Las cifras y palmarés pueden cambiar, así que consulta fuentes oficiales para datos actualizados. Antes de empezar cualquier programa de entrenamiento, conviene consultar con un profesional.</p>
+</footer>
+</body>
+</html>
